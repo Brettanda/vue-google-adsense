@@ -16,11 +16,12 @@
       :data-full-width-responsive="dataFullWidthResponsive" />
     <script2
       v-if="isNonPersonalizedAds"
-      type="text/javascript">
-      (adsbygoogle = window.adsbygoogle || []).push({}).requestNonPersonalizedAds = 1;
+      type="text/javascript">if(typeof window !== "undefined") {
+      (adsbygoogle = window.adsbygoogle || []).push({}).requestNonPersonalizedAds = 1; }
     </script2>
     <script2 type="text/javascript">
-      (adsbygoogle = window.adsbygoogle || []).push({});
+    if(typeof window !== "undefined") {
+      (adsbygoogle = window.adsbygoogle || []).push({});}
     </script2>
   </div>
 </template>
